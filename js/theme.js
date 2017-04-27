@@ -5,6 +5,8 @@ window.$ = window.jQuery = jQuery;
 
 jQuery.noConflict(true);
 
+require('./chapter-2/exercises.js');
+
 // Custom JavaScript
 // !function($) {
 //    'use strict'; // Start of use strict
