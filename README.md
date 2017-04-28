@@ -3,7 +3,7 @@
 Using Mocha and Chai to test suite a way through exercises from [Eloquent Javascript - Second Edition](http://eloquentjavascript.net/).
 
 Test suite.
-`./test/main_test.js`
+[test/main_test.js](https://github.com/chrisj-skinner/mocha-chai-eloquent-javascript/blob/master/test/main_test.js)
 
 ## Copyright and License
 
