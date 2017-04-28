@@ -1,105 +1,34 @@
 var expect = require('chai').expect;
 
 
+// Chapter 2
+describe('Chapter 2', function(){
 
-// describe('checkForShip', function(){
-// 	var checkForShip = require('../game_logic/ship_methods').checkForShip;
-//
-// 	var player;
-//
-// 	before(function(){
-// 		player = {
-// 			ships: [
-// 				{
-// 					locations: [[0, 0], [0, 1]]
-// 				},
-// 				{
-// 					locations: [[1, 0], [1, 1]]
-// 				},
-// 				{
-// 					locations: [[2, 0], [2, 1], [2, 2], [2, 3]]
-// 				}
-// 			]
-// 		};
-//
-// 	});
-//
-// 	it('should correctly report no ship at a given players coordinate', function(){
-//
-// 		expect(checkForShip(player, [9, 9])).to.be.false
-// 	});
-//
-// 	it('should correctly resport a ship located at the given coordinates', function(){
-//
-// 		expect(checkForShip(player, [0, 0])).to.deep.equal(player.ships[0]);
-// 	});
-//
-// 	it('should handle ships located at more than one coordinate', function () {
-//
-// 		expect(checkForShip(player, [0, 0])).to.deep.equal(player.ships[0]);
-// 		expect(checkForShip(player, [0, 1])).to.deep.equal(player.ships[0]);
-// 		expect(checkForShip(player, [9, 9])).to.be.false;
-//
-// 	});
-//
-// 	it('should handle checking multiple ships', function () {
-//
-// 		expect(checkForShip(player, [0, 0])).to.deep.equal(player.ships[0]);
-// 		expect(checkForShip(player, [0, 0])).to.deep.equal(player.ships[0]);
-// 		expect(checkForShip(player, [1, 0])).to.deep.equal(player.ships[1]);
-// 		expect(checkForShip(player, [1, 1])).to.deep.equal(player.ships[1]);
-// 		expect(checkForShip(player, [2, 3])).to.deep.equal(player.ships[2]);
-// 		expect(checkForShip(player, [9, 9])).to.be.false;
-//
-// 	});
-//
-// });
-//
-// describe('damageShip', function(){
-//
-// 	var damageShip = require('../game_logic/ship_methods').damageShip;
-//
-//
-// 	it('should register damage on a given ship at a given location', function () {
-//
-// 		var ship = {
-// 			location: [[0, 0]],
-// 			damage: []
-// 		};
-//
-// 		damageShip(ship, [0, 0]);
-// 		expect(ship.damage).not.to.be.empty;
-// 		expect(ship.damage[0]).to.deep.equal([0, 0]);
-// 	});
-//
-// });
-//
-// describe('fireShot', function(){
-//
-// 	var fireShot = require('../game_logic/ship_methods').fireShot;
-// 	var player;
-//
-// 	beforeEach(function(){
-// 		player = {
-// 			ships: [
-// 				{
-// 					locations : [[0, 0]],
-// 					damage: []
-// 				}
-// 			]
-// 		};
-// 	});
-//
-// 	it('should log damage if a ship is located at a given coordinate', function () {
-//
-// 		fireShot(player, [0, 0]);
-// 		expect(player.ships[0].damage[0]).to.deep.equal([0, 0]);
-// 	});
-//
-// 	it('should not log damage if a ship is located at a given coordinate', function () {
-//
-// 		fireShot(player, [9, 9]);
-// 		expect(player.ships[0].damage).to.be.empty;
-// 	});
-//
-// });
+});
+
+// Chapter 3
+describe('Chapter 3', function(){
+   // Require
+   const chapter3 = require('../js/exercises/chapter-3.js').chapter3;
+
+   // Setup
+   const min = chapter3.min,
+      isEven = chapter3.isEven;
+
+   // Exercise 1
+   it('Exercise 1 should return the minimum numbered value of 2 arguments.', function(){
+      expect(min(1,2)).to.equal(1);
+   });
+
+   // Exercise 2
+   it('Exercise 2 should return true for the value of 50.', function(){
+      expect(isEven(50)).to.be.true;
+   });
+   it('Exercise 2 should return false for the value of 75.', function(){
+      expect(isEven(75)).to.be.false;
+   });
+   it('Exercise 2 should throw a \'call stack exceeded\' error for the value of -1.', function(){
+      expect(isEven.bind(null, -1)).to.throw(RangeError);
+   });
+
+});
