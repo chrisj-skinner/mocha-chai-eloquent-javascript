@@ -3,7 +3,8 @@
         "browser": true,
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "mocha": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -12,9 +13,6 @@
         },
         "sourceType": "module"
     },
-    "plugins": [
-        "chai-friendly"
-    ],
     "rules": {
         "indent": [
             "error",
@@ -38,8 +36,6 @@
              "log"
              ]
           }
-       ],
-       "no-unused-expressions": 0,
-       "chai-friendly/no-unused-expressions": 2
+       ]
     }
 }
