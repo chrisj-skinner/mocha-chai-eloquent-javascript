@@ -20,7 +20,7 @@ function isEven(num){
 
 
 // Create object to export
-var chapter3 = {
+const chapter3 = {
    min: min,
    isEven: isEven
 };
