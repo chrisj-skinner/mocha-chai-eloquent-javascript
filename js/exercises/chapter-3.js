@@ -17,6 +17,9 @@ function isEven(num){
 }
 
 // Excercise 3
+
+
+// Create object to export
 var chapter3 = {
    min: min,
    isEven: isEven
