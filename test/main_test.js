@@ -8,6 +8,7 @@ describe('Chapter 2', function(){
 
 // Chapter 3
 describe('Chapter 3', function(){
+   
    // Require
    const chapter3 = require('../js/exercises/chapter-3.js').chapter3;
 
