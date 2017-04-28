@@ -2,7 +2,7 @@
 
 Working through exercises from [Eloquent Javascript - Second Edition] (http://eloquentjavascript.net/).
 
-Test suite using Mocha and Chai.
+Using Mocha and Chai as a test suite.
 `./test/main_test.js`
 
 ## Copyright and License
