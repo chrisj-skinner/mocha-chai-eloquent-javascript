@@ -1,4 +1,4 @@
-# Exercises from Eloquent JS Second Edition
+# Moach and Chai + Eloquent JS Second Edition
 
 Using Mocha and Chai to test suite a way through exercises from [Eloquent Javascript - Second Edition](http://eloquentjavascript.net/).
 
