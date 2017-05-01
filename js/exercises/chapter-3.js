@@ -51,11 +51,11 @@ function countChar(string, char){
 }
 
 // Create object to export
-const chapter3 = {
+const obj = {
    min: min,
    isEven: isEven,
    countBs: countBs,
    countChar: countChar
 };
 
-module.exports.chapter3 = chapter3;
+module.exports.obj = obj;
